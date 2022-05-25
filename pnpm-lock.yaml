@@ -16,12 +16,6 @@ importers:
     devDependencies:
       vite: 2.9.9
 
-  packages/pruebas-js:
-    specifiers:
-      vite: ^2.9.9
-    devDependencies:
-      vite: 2.9.9
-
   packages/solid:
     specifiers:
       solid-element: ^1.4.2
@@ -37,7 +31,7 @@ importers:
       vite: 2.9.9
       vite-plugin-solid: 2.2.6
 
-  packages/vanilla:
+  packages/vanilla-js-svg:
     specifiers:
       vite: ^2.9.9
     devDependencies:
