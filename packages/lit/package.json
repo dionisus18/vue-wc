@@ -1,0 +1,27 @@
+{
+  "name": "@dionisus18/lit-spinners",
+  "version": "1.0.0",
+  "description": "spinners basados en lit",
+  "main": "dist/my-spinner.es.js",
+  "type": "module",
+  "module": "dist/my-element.js",
+  "exports": {
+    ".": "./dist/my-spinner.es.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "Kevin Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^2.2.4",
+    "wc-spinners": "^1.1.1"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9"
+  }
+}
