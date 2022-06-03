@@ -4,28 +4,36 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "serve-prod": "serve -s dist",
+    "swr": "pnpm build && pnpm serve-prod"
   },
   "dependencies": {
+    "@vue/composition-api": "1.6.1",
     "axios": "^0.27.2",
     "core-js": "^3.22.7",
     "register-service-worker": "^1.7.2",
     "vue": "^2.6.14",
+    "vue-async-computed": "^3.9.0",
     "vue-router": "^3.5.4",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/eslint-parser": "^7.18.2",
     "@vue/cli-plugin-babel": "~5.0.4",
+    "@vue/cli-plugin-eslint": "^5.0.4",
     "@vue/cli-plugin-pwa": "~5.0.4",
     "@vue/cli-plugin-router": "~5.0.4",
     "@vue/cli-plugin-vuex": "~5.0.4",
     "@vue/cli-service": "~5.0.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "prettier": "^2.6.2",
     "vue-template-compiler": "^2.6.14",
-    "workbox-build": "^6.5.3",
-    "workbox-cli": "^6.5.3",
-    "workbox-precaching": "^6.5.3",
-    "workbox-routing": "^6.5.3",
-    "workbox-strategies": "^6.5.3",
-    "workbox-webpack-plugin": "^6.5.3"
+    "webpack": "^5.72.1"
   }
 }
