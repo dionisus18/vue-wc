@@ -1,0 +1,18 @@
+{
+  "name": "rollup-plugin-vue-extends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/pluginutils": "^4.2.1",
+    "@vue/component-compiler-utils": "^3.3.0",
+    "htmlparser2": "^8.0.1",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
