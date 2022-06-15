@@ -10,12 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "solid-element": "^1.4.2",
-    "solid-js": "^1.4.2",
+    "solid-element": "^1.4.3",
+    "solid-js": "^1.4.3",
     "wc-spinners": "^1.1.1"
   },
   "devDependencies": {
-    "vite": "^2.9.9",
+    "vite": "^2.9.10",
     "vite-plugin-solid": "^2.2.6"
   }
 }

@@ -28,7 +28,11 @@ registerRoute(
   },
   new StaleWhileRevalidate({
     cacheName: "api-response",
-    plugins: [new BroadcastUpdatePlugin()],
+    plugins: [
+      new BroadcastUpdatePlugin({
+        headersToCheck: ["etag"],
+      }),
+    ],
   })
 );
 /* registerRoute(

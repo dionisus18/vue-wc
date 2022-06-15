@@ -1,0 +1,29 @@
+{
+  "name": "vue-cli-herencia",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.22.8",
+    "svelte-readmore": "workspace:^0.0.0",
+    "vue": "^2.6.14",
+    "vue-inheritance-loader": "^0.2.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/eslint-parser": "^7.18.2",
+    "@vue/cli-plugin-babel": "~5.0.4",
+    "@vue/cli-plugin-eslint": "~5.0.4",
+    "@vue/cli-service": "~5.0.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "prettier": "^2.6.2",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

@@ -12,7 +12,7 @@ const count = ref(0);
 
 <template>
   <!-- <my-spinner type="atom"></my-spinner> -->
-  <my-counter type="atom"></my-counter>
+  <my-counter max-len="asdasdasdasd"></my-counter>
   <div>
     <h1>{{ msg }}</h1>
 

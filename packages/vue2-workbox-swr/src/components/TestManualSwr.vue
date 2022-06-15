@@ -3,10 +3,18 @@
     <!-- <h1>{{ titleTextManual }}</h1>
     <button @click="cargar">cargar</button> -->
     <a :data-algo="link" href="mailto:contacto@bancaeticalat.cl">{{ text }}</a>
+    <wrapper-props
+      tag="main"
+      :props.prop="{ href: { text: 'https://google.cl' }, otra: 'asdasda' }"
+    >
+      <span names="juancarlos"> hijitos </span>
+    </wrapper-props>
   </div>
 </template>
 
 <script>
+import "svelte-wrapper-props";
+
 export default {
   name: "TestManualSwr",
   data() {

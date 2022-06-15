@@ -37,10 +37,10 @@ export function useRequest() {
     };
     window.addEventListener(url, handlerBroadCastUpdate, false);
     mutate();
-    onUnmounted(() => {
-      console.log("removeEventListener message: workbox-broadcast-update");
-      window.removeEventListener(url, handlerBroadCastUpdate, false);
-    });
+    // onUnmounted(() => {
+    //   console.log("removeEventListener message: workbox-broadcast-update");
+    //   window.removeEventListener(url, handlerBroadCastUpdate, false);
+    // });
     return { result, mutate };
   };
 }

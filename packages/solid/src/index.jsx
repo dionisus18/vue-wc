@@ -1,6 +1,25 @@
 // import { createSignal } from "solid-js";
 import { customElement } from "solid-element";
-import "wc-spinners";
+import { createMemo, createSignal, createEffect } from "solid-js";
+import { template } from "solid-js/web";
+function readMore(props) {
+  const [readMore, setReadMore] = createSignal(false);
+  console.log(props);
+  const LocalTemplate = createMemo(() =>
+    template(readMore() ? props?.text : props.text.slice(0, props["max-len"]))
+  );
+  createEffect(() => console.log("template", LocalTemplate()));
+  return (
+    <>
+      <LocalTemplate />
+      <a href="#" onClick={() => setReadMore(!readMore())}>
+        {readMore()
+          ? props["read-less"] || "Leer Menos..."
+          : props["read-more"] || "Leer Más..."}
+      </a>
+    </>
+  );
+}
 
 const style = `.spinner-container {
   position: fixed;
@@ -15,16 +34,13 @@ const style = `.spinner-container {
   z-index: 1001;
 }`;
 
-customElement("my-counter", { type: "bar" }, (props, { element }) => {
+customElement("my-counter", { maxLen: "1" }, (props, { element }) => {
   // const [count, setCount] = createSignal(0);
+  console.log("props", { props });
   return (
     <>
-      <style>{style}</style>
-      <div class="spinner-container">
-        {props.type
-          ? document.createElement(`${props.type}-spinner`)
-          : document.createElement(`bar-spinner`)}
-      </div>
+      {/* <style>{style}</style> */}
+      <div class="spinner-container">{readMore(props)}</div>
     </>
   );
 });
